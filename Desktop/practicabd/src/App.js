@@ -1,6 +1,8 @@
 import "./App.css";
 import { MdPerson } from "react-icons/md";
 import { FaSchool } from "react-icons/fa";
+import { FaTrashAlt } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
 
 function App() {
   return (
@@ -36,22 +38,43 @@ function App() {
             className="Separador"
             style={{ borderBottom: "3px solid rgb(212, 212, 212)" }}
           >
-            {" "}
+            <div className="Info">
             <h1 className="CuerpoTexto">Hola</h1>
+            <h1 className="CuerpoTexto">Hola</h1>
+            <h1 className="CuerpoTexto">Hola</h1>
+            </div>
+            <div className="BorrarEditar"> 
+            <div className="BotonesAE"><FaEdit color="#fff" size={25}/></div>
+            <div className="BotonesAE"><FaTrashAlt color="#fff" size={20}/></div>
+            </div>
           </div>
           <div
             className="Separador"
             style={{ borderBottom: "3px solid rgb(212, 212, 212)" }}
           >
-            {" "}
-            <h1 className="CuerpoTexto">Hola2</h1>
+            <div className="Info">
+            <h1 className="CuerpoTexto">Hola</h1>
+            <h1 className="CuerpoTexto">Hola</h1>
+            <h1 className="CuerpoTexto">Hola</h1>
+            </div>
+            <div className="BorrarEditar"> 
+            <div className="BotonesAE"><FaEdit color="#fff" size={25}/></div>
+            <div className="BotonesAE"><FaTrashAlt color="#fff" size={20}/></div>
+            </div>
           </div>
           <div
             className="Separador"
             style={{ borderBottom: "3px solid rgb(212, 212, 212)" }}
           >
-            {" "}
-            <h1 className="CuerpoTexto">Hola3</h1>
+            <div className="Info">
+            <h1 className="CuerpoTexto">Hola</h1>
+            <h1 className="CuerpoTexto">Hola</h1>
+            <h1 className="CuerpoTexto">Hola</h1>
+            </div>
+            <div className="BorrarEditar"> 
+            <div className="BotonesAE"><FaEdit color="#fff" size={25}/></div>
+            <div className="BotonesAE"><FaTrashAlt color="#fff" size={20}/></div>
+            </div>
           </div>
         </div>
         <div className="Container">

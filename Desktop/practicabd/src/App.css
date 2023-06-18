@@ -49,7 +49,16 @@
 
 .ContenidoTabla{
   width: 87%;
-  height: 40px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.BorrarEditar{
+  width: 7%;
+  height: 45px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -58,7 +67,25 @@
 
 .Separador{
   width: 100%;
-  height: 40px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Info{
+  width: 93%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+}
+
+.BotonesAE{
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  background-color: #A40783;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -84,6 +111,7 @@
   color: #545454;
   font-size: 20px;
   font-family: Helvetica;
+  padding-left: 40px;
 }
 
 .Boton{
