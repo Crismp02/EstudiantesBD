@@ -1,8 +1,12 @@
 const pool = require("../database/connection");
 
 async function readEstudiantes(req, res) {
-  const estudiantes = await pool.query("SELECT * FROM estudiantes");
-  return res.send(estudiantes.rows);
+  try {
+    const estudiantes = await pool.query("SELECT * FROM estudiantes");
+    return res.send(estudiantes.rows);
+  } catch (e) {
+    res.send("Error obteniendo los estudiantes!");
+  }
 }
 
 async function createEstudiantes(req, res) {
@@ -37,7 +41,7 @@ async function createEstudiantes(req, res) {
     return res.send(queryResult);
   } catch (error) {
     console.log(error);
-    return res.send("Error creando al usuario!");
+    return res.send("Error creando al estudiante!");
   }
 }
 
