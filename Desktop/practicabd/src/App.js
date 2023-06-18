@@ -3,6 +3,8 @@ import { MdPerson } from "react-icons/md";
 import { FaSchool } from "react-icons/fa";
 import { FaTrashAlt } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
+import EstRow from "./components/EstRow"; 
+
 
 function App() {
   return (
@@ -34,48 +36,10 @@ function App() {
               <h2 className="Titulos3">StatusEst</h2>
             </div>
           </div>
-          <div
-            className="Separador"
-            style={{ borderBottom: "3px solid rgb(212, 212, 212)" }}
-          >
-            <div className="Info">
-            <h1 className="CuerpoTexto">Hola</h1>
-            <h1 className="CuerpoTexto">Hola</h1>
-            <h1 className="CuerpoTexto">Hola</h1>
-            </div>
-            <div className="BorrarEditar"> 
-            <div className="BotonesAE"><FaEdit color="#fff" size={25}/></div>
-            <div className="BotonesAE"><FaTrashAlt color="#fff" size={20}/></div>
-            </div>
-          </div>
-          <div
-            className="Separador"
-            style={{ borderBottom: "3px solid rgb(212, 212, 212)" }}
-          >
-            <div className="Info">
-            <h1 className="CuerpoTexto">Hola</h1>
-            <h1 className="CuerpoTexto">Hola</h1>
-            <h1 className="CuerpoTexto">Hola</h1>
-            </div>
-            <div className="BorrarEditar"> 
-            <div className="BotonesAE"><FaEdit color="#fff" size={25}/></div>
-            <div className="BotonesAE"><FaTrashAlt color="#fff" size={20}/></div>
-            </div>
-          </div>
-          <div
-            className="Separador"
-            style={{ borderBottom: "3px solid rgb(212, 212, 212)" }}
-          >
-            <div className="Info">
-            <h1 className="CuerpoTexto">Hola</h1>
-            <h1 className="CuerpoTexto">Hola</h1>
-            <h1 className="CuerpoTexto">Hola</h1>
-            </div>
-            <div className="BorrarEditar"> 
-            <div className="BotonesAE"><FaEdit color="#fff" size={25}/></div>
-            <div className="BotonesAE"><FaTrashAlt color="#fff" size={20}/></div>
-            </div>
-          </div>
+          <EstRow/>
+          <EstRow/>
+          <EstRow/>
+          <EstRow/>
         </div>
         <div className="Container">
           <div
