@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import EstRow from "./EstRow";
 import axios from "axios";
 import { BASE_URL } from "../../config";
+import Modal from "../Modal";
 
 export default function EstPage() {
   const [students, setStudents] = useState(null);
@@ -15,6 +16,11 @@ export default function EstPage() {
     fetchStudents();
   }, []);
 
+  const [active, setActive] = useState(false);
+
+  const toggle = () => {
+    setActive(!active);
+  }
   return (
     <>
       <h1 className="Titulos">Estudiantes</h1>
@@ -42,10 +48,16 @@ export default function EstPage() {
         <div
           className="Añadir"
           style={{ boxShadow: "0px 0px 10px 2px rgba(0, 0, 0, 0.2)" }}
-        >
+        onClick={toggle}>
+          <Modal active={active} toggle={toggle}>
+            <div className="ModalBase">
+                <h1>Funciona Añadir</h1>
+              </div>
+          </Modal>
           <h1 className="Titulos2">+</h1>
         </div>
       </div>
     </>
   );
 }
+

@@ -1,7 +1,19 @@
+import { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
+import Modal from "../Modal";
 
 export default function EstRow({ idestudiante, cedula, nombreest, codescuela, direccionest, telefonoest, fechanac, statusest }){
+    const [active, setActive] = useState(false);
+    const [activeEl, setActiveEl] = useState(false);
+
+    const toggle = () => {
+      setActive(!active);
+    }
+    const toggleEl = () => {
+      setActiveEl(!activeEl);
+    }
+
     return (
         <div
             className="Separador"
@@ -18,8 +30,21 @@ export default function EstRow({ idestudiante, cedula, nombreest, codescuela, di
             <h1 className="CuerpoTexto">{statusest}</h1>
             </div>
             <div className="BorrarEditar"> 
-            <div className="BotonesAE"><FaEdit color="#fff" size={25}/></div>
-            <div className="BotonesAE"><FaTrashAlt color="#fff" size={20}/></div>
+            <div className="BotonesAE" onClick={toggle}>
+            <Modal active={active} toggle={toggle}>
+              <div className="ModalBase">
+                <h1>Funciona Editar</h1>
+              </div>
+            </Modal>
+            <FaEdit color="#fff" size={25}/>
+            </div>
+            <div className="BotonesAE" onClick={toggleEl}>
+            <Modal active={activeEl} toggle={toggleEl}>
+              <div className="ModalBase">
+                <h1>Funciona eliminar</h1>
+              </div>
+            </Modal>
+              <FaTrashAlt color="#fff" size={20}/></div>
             </div>
           </div>
     )
