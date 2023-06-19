@@ -128,8 +128,12 @@
   justify-content: space-between;  
 }
 
-.Boton2{
+.BotonActivo{
   background: linear-gradient(to bottom, #A40783, #52B5E1);
+}
+
+.Boton2{
+  background-color: white;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   width: 49%;

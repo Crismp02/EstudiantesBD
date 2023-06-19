@@ -34,7 +34,9 @@ export default function EstPage() {
             <h2 className="Titulos3">StatusEst</h2>
           </div>
         </div>
+        <div style={{ overflow: 'auto', height: '65vh'}}>
         {students ? students.map(student => <EstRow {...student} />) : 'Loading...'}
+        </div>
       </div>
       <div className="Container">
         <div
