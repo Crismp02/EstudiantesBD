@@ -1,8 +1,5 @@
 import "./App.css";
-import { MdPerson } from "react-icons/md";
-import { FaSchool } from "react-icons/fa";
 import EstPage from "./components/estudiantes/EstPage";
-import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import SwitchButton from "./components/SwitchButton";
 import { useState } from "react";
 import EscPage from "./components/escuelas/EscPage";

@@ -1,8 +1,6 @@
 import "./App.css";
 import { MdPerson } from "react-icons/md";
 import { FaSchool } from "react-icons/fa";
-import { FaTrashAlt } from "react-icons/fa";
-import { FaEdit } from "react-icons/fa";
 import EscPage from "./components/escuelas/EscPage";
 
 

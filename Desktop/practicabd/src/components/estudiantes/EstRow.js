@@ -1,4 +1,3 @@
-import { FaSchool } from "react-icons/fa";
 import { FaTrashAlt } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 
